@@ -5,7 +5,7 @@ const NaverSports = () => {
     axios.get('https://m.sports.naver.com/kbaseball/video?sort=date&date=2023-03-21&tab=date&themeType=type&themeCode=2')
         .then((response) => {
             const $ = cheerio.load(response.data);
-            const elements = $('a.VideoList_link_video__TlHcC');
+            const elements = $('*.VideoList_link_video__TlHcC');
             console.log(elements);
         })
         .catch((error) => {

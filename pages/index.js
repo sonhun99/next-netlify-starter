@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import Clock from '@components/Clock'
+import NaverSports from '@components/NaverSports'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
 
       <Footer />
       <Clock />
+      <NaverSports />
     </div>
   )
 }
